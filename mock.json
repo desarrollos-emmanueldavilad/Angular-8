@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": 6,
+      "birthday": "2019"
+    },
+    {
+      "birthday": "eee",
+      "id": 7
+    },
+    {
+      "birthday": "2020-01-11",
+      "id": 8
+    },
+    {
+      "id": 9,
+      "birthday": "12333"
+    },
+    {
+      "id": 10,
+      "birthday": "1231qweqe"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
