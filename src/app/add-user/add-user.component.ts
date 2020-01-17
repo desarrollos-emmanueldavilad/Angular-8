@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { FormBuilder, FormGroup, Validators, FormControl } from "@angular/forms";
 import { Router } from "@angular/router";
 import { ApiServiceService } from "../services/api-service.service";
+import Swal from 'sweetalert2';
 @Component({
   selector: "app-add-user",
   templateUrl: "./add-user.component.html",
@@ -41,6 +42,7 @@ export class AddUserComponent implements OnInit {
 
   onSubmit() {
     this.apiService.AddUser(this.addUser.value).subscribe(data => {
+      Swal.fire("Good job!", "The data was added!", "success");
       this.router.navigate(["/"]);
     });
   }
