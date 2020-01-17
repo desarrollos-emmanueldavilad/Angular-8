@@ -2,7 +2,7 @@
 
 <div class="col-md-12 user-container">
   <div class="search-div text-center mx-auto">
-    <h2 style="margin: auto">User List</h2>
+    <h2 style="margin: auto" i18n>User List</h2>
     <input
       matInput
       placeholder="Search..."
@@ -28,7 +28,10 @@
       </tr>
     </thead>
     <tbody>
-      <tr class="text-center" *ngFor="let user of userData| filter: searchTerm; let i = index">
+      <tr
+        class="text-center"
+        *ngFor="let user of userData | filter: searchTerm; let i = index"
+      >
         <td>{{ i + 1 }}</td>
         <td>{{ user.name }}</td>
         <td>{{ user.birthday | date: "dd/MM/yyyy" }}</td>

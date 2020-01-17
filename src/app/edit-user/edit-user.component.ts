@@ -5,7 +5,7 @@ import { FormBuilder } from "@angular/forms";
 import { FormGroup } from "@angular/forms";
 import { UserInterface } from "./../models/user.interfase";
 import { Component, OnInit } from "@angular/core";
-import Swal from 'sweetalert2';
+import Swal from "sweetalert2";
 
 @Component({
   selector: "app-edit-user",
@@ -47,8 +47,8 @@ export class EditUserComponent implements OnInit {
   updateUser(form: any) {
     this.apiService.UpdateUser(this.id, form).subscribe(
       res => {
-        //Update User 
-      Swal.fire("Good job!", "The data was updated!", "success");
+        //Update User
+        Swal.fire("Good job!", "The data was updated!", "success");
         this.router.navigate(["/"]);
       },
       err => {
