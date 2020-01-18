@@ -2,7 +2,12 @@
 
 <div class="col-md-12 user-container">
   <div class="search-div text-center mx-auto">
-    <h2 style="margin: auto" i18n>User List</h2>
+    <h2
+      style="margin: auto"
+      i18n="Title | This is the principal title@@titlePrincipal"
+    >
+      <abbr i18n i18n-title title="Titulo"> User List</abbr>
+    </h2>
     <input
       matInput
       placeholder="Search..."
@@ -22,9 +27,15 @@
     <thead>
       <tr class="text-center">
         <th class="th-sm">#</th>
-        <th class="th-sm">Name</th>
-        <th class="th-sm">Birthday</th>
-        <th class="th-sm">Actions</th>
+        <th class="th-sm" i18n="name | This is the name@@name">
+          <abbr i18n i18n-title title="Nombre"> Name</abbr>
+        </th>
+        <th class="th-sm" i18n="birthday | This is the birthday@@birthday">
+          <abbr i18n i18n-title title="Fecha de cumpleaños"> Birthday</abbr>
+        </th>
+        <th class="th-sm" i18n="actions | This is the actions@@actions">
+          <abbr i18n i18n-title title="Acciones"> Actions</abbr>
+        </th>
       </tr>
     </thead>
     <tbody>
@@ -54,13 +65,21 @@
     <tfoot class="tableFoot">
       <tr class="text-center">
         <th class="th-sm">Id</th>
-        <th class="th-sm">Name</th>
-        <th class="th-sm">Birthday</th>
-        <th class="th-sm">Actions</th>
+        <th class="th-sm" i18n="name | This is the name@@name">
+          <abbr i18n i18n-title title="Nombre"> Name</abbr>
+        </th>
+        <th class="th-sm" i18n="birthday | This is the birthday@@birthday">
+          <abbr i18n i18n-title title="Fecha de cumpleaños"> Birthday</abbr>
+        </th>
+        <th class="th-sm" i18n="actions | This is the actions@@actions">
+          <abbr i18n i18n-title title="Acciones"> Actions</abbr>
+        </th>
       </tr>
     </tfoot>
   </table>
 </div>
 <div *ngIf="!userData">
-  <h4 class="text-center">Don't Exits users in this moment</h4>
+  <h4 class="text-center" i18n="dontUsers | This is the condicion@@if">
+    <abbr i18n i18n-title title="Sin usuarios en este momento"> Don't Exits users in this moment</abbr>
+  </h4>
 </div>

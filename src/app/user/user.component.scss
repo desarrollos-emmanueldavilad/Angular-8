@@ -21,7 +21,12 @@
   color: turquoise;
   cursor: pointer;
 }
-
+abbr{
+    text-decoration: none;
+}
+abbr:hover{
+    color: #375597 !important;
+}
 @media 
 only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
@@ -29,6 +34,8 @@ only screen and (max-width: 760px),
   .navbar-dark .navbar-brand {
     width: 60% !important;
 }
+
+
 
 .search{
   width: 90%;

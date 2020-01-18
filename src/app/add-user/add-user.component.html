@@ -7,9 +7,22 @@
     (ngSubmit)="onSubmit()"
     class="text-center border border-light p-5"
   >
-    <p class="h4 mb-4">Subscribe a user</p>
+    <p
+      class="h4 mb-4"
+      i18n="TitleAddUser | This is the add user title@@addUserTitle"
+    >
+      <abbr i18n i18n-title title="Agregar usuario"> Subscribe a user</abbr>
+    </p>
 
-    <p>Join our webapp l. We write code for change the world!.</p>
+    <p i18n="Subtitle | This is a subtitle@@subtitle">
+      <abbr 
+        i18n
+        i18n-title
+        title="Únete a nuestra aplicación web. ¡Nuestro codigo cambiara el mundo!"
+      >
+        Join our webapp l. We write code for change the world!.
+      </abbr>
+    </p>
 
     <p>
       <a href="" target="_blank">Innocv</a>
@@ -21,6 +34,7 @@
       formControlName="name"
       class="form-control mb-4"
       placeholder="Name"
+      id="name"
     />
     <ng-container *ngFor="let validation of validation_messages.name">
       <div
@@ -58,8 +72,9 @@
       class="btn btn-info btn-block mt-3
     "
       type="submit"
+      i18n="Button | Submit button@@button"
     >
-      Create
+      <abbr i18n i18n-title title="Agregar usuario"> Subscribe a user</abbr>
     </button>
   </form>
 </div>

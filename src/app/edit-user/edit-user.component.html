@@ -2,17 +2,33 @@
 
 <div class="row mt-5">
   <div class="col-md-6 mx-auto">
-    <h2 class="text-center">Update User</h2>
+    <h2 class="text-center" i18n="updateTitle | Update Title@@updateTitle">
+      <abbr i18n i18n-title title="Editar usuario"> Update User</abbr>
+    </h2>
     <div class="card mt-3">
       <div class="card-body">
         <form [formGroup]="editForm" (ngSubmit)="updateUser(editForm.value)">
           <div class="form-group text-center">
-            <p class="col-md-12">
-              Your Birthday is: {{ this.datos.birthday | date: "dd/MM/yyyy" }}
+            <p
+              class="col-md-12"
+              i18n="birthdayEdit | Update BirthdayEdit@@birthdayEdit"
+            >
+              <abbr
+                i18n
+                i18n-title
+                title="Tu fecha de nacimiento es: {{
+                  this.datos.birthday | date: 'dd/MM/yyyy'
+                }}"
+              >
+                Your Birthday is:
+                {{ this.datos.birthday | date: "dd/MM/yyyy" }}</abbr
+              >
             </p>
           </div>
           <div class="form-group">
-            <label class="col-md-4">Name </label>
+            <label class="col-md-4" i18n="nameEdit| Name Edit@@NameEdit">
+              <abbr i18n i18n-title title="Nombre"> Name</abbr>
+            </label>
             <input type="text" class="form-control" formControlName="name" />
           </div>
           <div class="form-group mx-auto text-center">
@@ -20,15 +36,19 @@
               type="submit"
               class="btn btn-primary col-md-12"
               [disabled]="editForm.invalid"
+              i18n="Update| Update@@Update"
             >
-              Update
+              <abbr i18n i18n-title title="Completar edición"> Update</abbr>
             </button>
             <button
               [routerLink]="['/']"
               type="submit"
               class="btn btn-primary col-md-12 "
+              i18n="Back| Back@@Back"
             >
-              Back
+            <abbr i18n i18n-title title="Back"> Back</abbr>
+
+              
             </button>
           </div>
         </form>

@@ -17,13 +17,22 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="/"
-          >Userlist
-          <span class="sr-only">(current)</span>
+        <a
+          class="nav-link"
+          href="/"
+          i18n="NavPrincipalLink | This is the navbar link@@userList"
+        >
+          <abbr i18n i18n-title title="Lista de usuarios"> User list</abbr>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" (click)="addUser()">AddUser</a>
+        <a
+          class="nav-link"
+          (click)="addUser()"
+          i18n="NavAddUser | This is the navbar link@@addUser"
+        >
+          <abbr i18n i18n-title title="Agregar usuario"> Add User</abbr>
+        </a>
       </li>
     </ul>
   </div>

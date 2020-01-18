@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="es" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="titlePrincipal" datatype="html">
+        <source>
+      User List
+    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description"> This is the principal title</note>
+        <note priority="1" from="meaning">Title </note>
+      </trans-unit>
+      <trans-unit id="name" datatype="html">
+        <source>Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+        <note priority="1" from="description"> This is the  name</note>
+        <note priority="1" from="meaning">name </note>
+      </trans-unit>
+      <trans-unit id="birthday" datatype="html">
+        <source>Birthday</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <note priority="1" from="description"> This is the birthday</note>
+        <note priority="1" from="meaning">birthday </note>
+      </trans-unit>
+      <trans-unit id="actions" datatype="html">
+        <source>Actions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+        <note priority="1" from="description"> This is the actions</note>
+        <note priority="1" from="meaning">actions </note>
+      </trans-unit>
+      <trans-unit id="if" datatype="html">
+        <source>Don&apos;t Exits users in this moment</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <note priority="1" from="description"> This is the condicion</note>
+        <note priority="1" from="meaning">dontUsers </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
