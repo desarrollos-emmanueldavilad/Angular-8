@@ -1,5 +1,5 @@
 export class UserInterface {
-  _id: number;
+  id: number;
   name?: string;
   birthday?: string;
 }
